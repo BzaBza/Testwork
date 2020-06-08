@@ -1,0 +1,36 @@
+.picture {
+  width: 18rem;
+  height: 12rem;
+  background-color: rgba(0, 0, 0, .04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.item-content {
+  background-color: rgba(232, 2, 94, 0.62);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+.date-address-wrapper {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+
+.address {
+  padding: .5rem;
+}
+
+.date {
+  padding: .5rem;
+  color: rgba(0, 0, 0, 0.76);
+}

@@ -1,0 +1,22 @@
+<div class="page-wrapper">
+  <div class="title-container">
+    <button class="go-back" (click)="goBack()">
+      <span class="material-icons">
+        reply
+      </span>
+    </button>
+    <h2 class="title">
+      Add Event
+    </h2>
+  </div>
+
+  <main>
+    <div class="event-form-container">
+      <app-create-event-form></app-create-event-form>
+    </div>
+    <div class="event-preview">
+      <div class="event-item-title">Preview</div>
+      <app-event-item [eventData]="newEvent | async"></app-event-item>
+    </div>
+  </main>
+</div>

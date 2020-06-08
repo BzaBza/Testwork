@@ -1,0 +1,32 @@
+<div class="form-container">
+  <form [formGroup]="event" (ngSubmit)="submit()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Event name</mat-label>
+      <input [formControl]="name"
+             matInput
+             required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Address</mat-label>
+      <input [formControl]="address"
+             matInput
+             required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="date-label">Date</mat-label>
+      <input required
+             matInput
+             [formControl]="date"
+             [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix
+                             [for]="picker">
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" color="primary">Add</button>
+  </form>
+</div>

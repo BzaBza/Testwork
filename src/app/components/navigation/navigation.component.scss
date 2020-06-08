@@ -1,0 +1,25 @@
+nav {
+  background-color: #0b0b61;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+
+  li {
+    list-style: none;
+    color: #ffffff;
+
+    a {
+      color: #a3a3a3;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+}

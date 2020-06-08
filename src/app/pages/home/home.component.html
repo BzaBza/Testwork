@@ -1,0 +1,20 @@
+<div class="page-wrapper">
+  <h2 class="title">
+    Home
+  </h2>
+
+  <main class="content">
+    <div *ngFor="let event of (events | async)">
+      <app-event-item [eventData]="event"></app-event-item>
+    </div>
+    <button (click)="redirectToCreateNewEvent()"
+            class="create-new-event">
+      <span>
+        Create new
+      </span>
+      <span class="material-icons">
+        add
+      </span>
+    </button>
+  </main>
+</div>
